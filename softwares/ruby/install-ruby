@@ -33,12 +33,4 @@ function clean(){
   rm -rf tmp
 }
 
-
-if [ -w "/usr/local/ruby/bin/ruby" ]; then
-  echo 'Ruby has already been installed'
-else
-  install_ruby
-fi
-
-#clean
-
+/usr/local/ruby/bin/ruby -v > /dev/null && echo 'ruby has been already installed' || install_ruby
