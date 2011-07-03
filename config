@@ -1,2 +1,2 @@
-location=company
-automatic=1
+export WAW_LOCATION=home
+export WAW_AUTOMATIC=1
