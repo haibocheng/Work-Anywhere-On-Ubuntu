@@ -1,9 +1,14 @@
 #!/bin/bash
-mkdir -p tmp/softwares/sqlite
-pushd tmp/softwares/sqlite
-wget -c http://www.sqlite.org/sqlite-src-3070603.zip
-unzip sqlite-*.zip
-cd sqlite*
-./configure
-make
-sudo make install
+function install_sqlite(){
+    mkdir -p tmp/softwares/sqlite
+    pushd tmp/softwares/sqlite
+    wget -c http://www.sqlite.org/sqlite-src-3070603.zip
+    unzip sqlite-*.zip
+    cd sqlite*
+    ./configure
+    make
+    sudo make install
+}
+
+sqlite3 -version > /dev/null && echo 'sqlite3 has already beeen installed' \
+|| install_sqlite
