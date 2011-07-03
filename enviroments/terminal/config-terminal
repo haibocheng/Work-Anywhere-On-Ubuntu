@@ -1,0 +1,5 @@
+#!/bin/bash
+path=`dirname $0`
+dest=~/.gconf/apps/gnome-terminal
+mkdir -p dest
+cp config/* $dest/ -a
