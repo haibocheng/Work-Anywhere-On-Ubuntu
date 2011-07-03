@@ -1,0 +1,33 @@
+#!/bin/bash
+
+function install(){
+    sudo apt-get install -y \
+        tofrodos \
+        ack-grep \
+        proxychains \
+        nautilus-open-terminal \
+        clipit \
+        gimp \
+        most \
+        autossh \
+        subversion
+        #--
+}
+
+function config(){
+    config_proxychains
+    config_man
+}
+
+function config_proxychains(){
+    sudo sed -i 's/^socks4 	127\.0\.0\.1 9050.*$/socks5 10.20.137.66 8000/' /etc/proxychains.conf
+}
+
+function config_man(){
+    sudo update-alternatives --set pager $(which most)
+}
+
+install
+config
+
+

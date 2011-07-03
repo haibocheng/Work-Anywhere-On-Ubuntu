@@ -1,0 +1,4 @@
+global:
+  soft_base: tmp/soft
+  cfg_base:  tmp/config
+  

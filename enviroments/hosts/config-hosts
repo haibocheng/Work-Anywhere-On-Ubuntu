@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function add_custom_hosts(){
+    cd $(dirname $0)
+    cp /etc/hosts hosts.tmp
+    cat hosts.working >> hosts.tmp
+    sudo cp /etc/hosts /etc/hosts.save \
+    && sudo cp hosts.tmp /etc/hosts \
+    && echo 'done' \
+    && rm hosts.tmp
+    cd - > /dev/null
+}
+
+if [ -z "$(grep '## FDEV HOSTS ##' /etc/hosts)" ]; then
+    echo 'adding FDEV hosts'
+    add_custom_hosts
+else
+    echo 'FDEV hosts already added'
+fi
+
+

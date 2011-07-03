@@ -1,0 +1,21 @@
+#!/bin/bash
+
+function add_custom_alias(){
+    cp $(dirname $0)/alias.working ~/.bash_my_alias
+    if [ -z "$(grep '## working alias ##' ~/.bashrc)" ]; then
+        echo '## working alias ##' >> ~/.bashrc
+        echo 'source ~/.bash_my_alias' >> ~/.bashrc
+    fi
+}
+
+if [ "-f" == "$1" ] && [ -e ~/.bash_my_alias ]; then
+    rm ~/.bash_my_alias
+fi
+
+if [ ! -e ~/.bash_my_alias ]; then
+    echo 'adding my alias'
+    add_custom_alias
+fi
+
+
+

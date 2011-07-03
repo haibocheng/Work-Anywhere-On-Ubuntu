@@ -1,0 +1,19 @@
+#!/bin/bash
+function make_private_key(){
+    ssh-keygen -q -N "" -t rsa -f ~/.ssh/working.rsa
+}
+
+function add_key_to_server(){
+    echo 'adding authoring key to server'
+    ssh-copy-id -i ~/.ssh/working.rsa.pub pnqcc@pnq.cc
+    ssh-copy-id -i ~/.ssh/working.rsa.pub uedstyle@uedstyle
+    ssh-copy-id -i ~/.ssh/working.rsa.pub root@ued65
+    ssh-copy-id -i ~/.ssh/working.rsa.pub ued65@ued65
+    ssh-copy-id -i ~/.ssh/working.rsa.pub root@ued66
+    ssh-copy-id -i ~/.ssh/working.rsa.pub ued66@ued66
+}
+
+if [ ! -e ~/.ssh/working.rsa ]; then
+    make_private_key
+fi
+add_key_to_server

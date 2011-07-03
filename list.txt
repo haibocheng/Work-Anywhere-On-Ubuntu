@@ -1,0 +1,34 @@
+Ubuntu workplace
+
+vim (colorschema: paintbox)
+修复vim编码的问题
+actionscript.vim
+zh-cn man
+
+xmind
+virtualbox-ose
+chrome, sync
+proxychain
+autossh
+ssh-key
+
+svn
+git
+ruby
+rails
+thin
+apache
+
+Flash develop enviroment
+flash debugger player
+flex sdk 3/3.5/4
+
+android
+android sdk
+
+
+窗口关闭按钮放置于右边
+终端字体设置
+
+chrome [add google ppa]
+terminal [make personal terminal profile]

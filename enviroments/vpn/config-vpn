@@ -1,0 +1,13 @@
+#!/bin/bash
+function add_vpn_alias(){
+    echo '' >> ~/.bashrc
+    echo '## vpn command alias ##' >> ~/.bashrc
+    echo 'alias vpn=~/cmd/vpn.sh' >> ~/.bashrc
+}
+mkdir -p ~/cmd
+path=`dirname $0`
+cp $path/array_vpnc.bin ~/cmd
+cp $path/vpn.sh ~/cmd
+if [ -z "$(grep '## vpn command alias ##' ~/.bashrc)" ]; then
+    add_vpn_alias
+fi

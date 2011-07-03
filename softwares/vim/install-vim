@@ -1,0 +1,18 @@
+#!/bin/bash
+# font
+sudo cp assets/fonts/* /usr/share/fonts/X11/
+# software
+gvim --version > /dev/null || sudo apt-get install vim-gnome
+# vim-files
+svn export softwares/vim/config/.vim_runtime ~/.vim_runtime --force
+#cp softwares/vim/config/.vim_runtime ~/ -a
+cp softwares/vim/config/.vimrc ~
+
+## config plugins
+path="tmp/softwares/vim-rails"
+rm -rf $path
+git clone https://github.com/tpope/vim-rails.git $path
+cp -a $path/plugin ~/.vim_runtime/
+cp -a $path/autoload ~/.vim_runtime/
+cp -a $path/doc ~/.vim_runtime/
+sudo rm ~/yankring_history*.txt ~/.vim_mru_files

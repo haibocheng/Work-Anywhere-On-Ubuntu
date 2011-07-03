@@ -1,0 +1,44 @@
+#!/bin/bash
+function install_ruby(){
+  prepair
+  mkdir tmp/softwares/ruby -p
+  echo 'Installing latest stable version of Ruby 1.9' \ 
+  wget -c 'http://ftp.ruby-lang.org/pub/ruby/ruby-1.9-stable.tar.gz' -O tmp/softwares/ruby/ruby-1.9-stable.tar.gz \
+  && pushd tmp/softwares/ruby \
+  && tar -xzf ruby-1.9-stable.tar.gz \
+  && cd ruby-1.9* \
+  && ./configure \
+        --prefix=/usr/local/ruby \
+  && make \
+  && sudo make install \
+  && echo 'Ruby successfully installed' \
+  && echo 'export PATH=$PATH:/usr/local/ruby/bin' > tmp.sh \
+  && sudo cp tmp.sh /etc/profile.d/ruby-path.sh \
+  && rm tmp.sh
+  popd
+  source /etc/profile.d/ruby-path.sh
+
+  update_gems
+}
+
+function prepair(){
+  sudo apt-get install build-essential libreadline5-dev libssl-dev
+}
+
+function update_gems(){
+  sudo /usr/local/ruby/bin/gem update --system
+}
+
+function clean(){
+  rm -rf tmp
+}
+
+
+if [ -w "/usr/local/ruby/bin/ruby" ]; then
+  echo 'Ruby has already been installed'
+else
+  install_ruby
+fi
+
+#clean
+

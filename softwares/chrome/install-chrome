@@ -1,0 +1,13 @@
+#!/bin/bash
+function install(){
+    sudo apt-get install \
+        chromium-browser \
+        chromium-browser-l10n \
+        chromium-browser-inspector
+}
+
+function config(){
+    sudo update-alternatives --set x-www-browser $(which chromium-browser)
+}
+
+install && config && echo 'done'

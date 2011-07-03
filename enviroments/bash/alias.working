@@ -1,0 +1,5 @@
+## working alias ##
+alias uedstyle='ssh uedstyle@uedstyle'
+alias ued66='ssh ued66@ued66'
+alias ued65='ssh ued65@ued65'
+alias gem='sudo /usr/local/ruby/bin/gem'

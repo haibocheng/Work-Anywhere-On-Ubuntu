@@ -1,0 +1,10 @@
+#!/bin/bash
+function config(){
+    path=`dirname $0`
+    cp $path/synergy.conf ~/.synergy.conf
+}
+
+[ -z "$(which synergys)" ] && sudo apt-get install synergy
+config
+synergys --daemon
+echo 'synergy is installed and running'

@@ -1,0 +1,9 @@
+#!/bin/bash
+mkdir -p tmp/softwares/sqlite
+pushd tmp/softwares/sqlite
+wget -c http://www.sqlite.org/sqlite-src-3070603.zip
+unzip sqlite-*.zip
+cd sqlite*
+./configure
+make
+sudo make install

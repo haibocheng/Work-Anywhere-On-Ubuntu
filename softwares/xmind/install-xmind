@@ -1,0 +1,5 @@
+#!/bin/bash
+#sudo dpkg -i __FILE__.deb
+sudo apt-get -f install
+sudo apt-get install openjdk-6-jre
+sudo dpkg -i $(dirname $0)/xmind*.deb
