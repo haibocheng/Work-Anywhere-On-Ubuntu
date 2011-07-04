@@ -1,0 +1,18 @@
+#!/bin/bash
+function add_dropbox_host(){
+    path=`dirname $0`
+    cp /etc/hosts hosts
+    cat $path/dropbox.host >> hosts
+    sudo cp hosts /etc/hosts
+}
+
+function install_dropbox(){
+    wget -c http://linux.dropbox.com/packages/nautilus-dropbox_0.6.7_amd64.deb -O nautilus-dropbox.deb
+    sudo dpkg -i nautilus-dropbox.deb
+}
+
+function start_dropbox(){
+    dropbox start -i
+}
+grep '## dropbox ##' /etc/hosts > /dev/null || add_dropbox_host
+install_dropbox && start_dropbox
