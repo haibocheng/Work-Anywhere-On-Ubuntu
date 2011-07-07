@@ -1,0 +1,16 @@
+#!/bin/bash
+#path=`dirname __FILE__`
+#cp $path/dict ~/cmd/dict
+tmp=tmp/sofwares/dict
+mkdir -p $tmp
+git clone pnqcc@pnq.cc:projects/dict $tmp
+cp $tmp/dict ~/cmd/dict
+chmod a+x ~/cmd/dict
+rm -rf $tmp
+
+if [ -z "$(grep '## dict ##' ~/.bashrc)" ]; then
+    echo -e '\n## dict ##' >> ~/.bashrc
+    echo 'alias d=~/cmd/dict' >> ~/.bashrc
+fi
+
+

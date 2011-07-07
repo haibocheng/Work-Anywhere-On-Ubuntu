@@ -1,0 +1,379 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+
+<purple version='1.0'>
+	<blist>
+		<group name='Buddies'>
+			<setting name='collapsed' type='bool'>0</setting>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>friendfeed@bot.im</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>friendfeed@talk.friendfeed.com</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>imified@imified.com</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>lyzzju@googlewave.com</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>twitter@twitter.com</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>a00448681@gmail.com</name>
+					<alias>Banum Spielman</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>b156c19ba4845a2d547e95f8feb21400795de5d9.png</setting>
+					<setting name='icon_checksum' type='string'>b156c19ba4845a2d547e95f8feb21400795de5d9</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>ananyezi@gmail.com</name>
+					<alias>潘礼庆</alias>
+					<setting name='last_seen' type='int'>1308305603</setting>
+					<setting name='buddy_icon' type='string'>c46c80210260e2c972844b9d264501fef7fcc147.jpg</setting>
+					<setting name='icon_checksum' type='string'>c46c80210260e2c972844b9d264501fef7fcc147</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>blankzheng@gmail.com</name>
+					<alias>怿飞</alias>
+					<setting name='last_seen' type='int'>1308199230</setting>
+					<setting name='buddy_icon' type='string'>54d9a99bf1b0807c1a499e1de492a160437dbc0d.png</setting>
+					<setting name='icon_checksum' type='string'>54d9a99bf1b0807c1a499e1de492a160437dbc0d</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>cn0796@gmail.com</name>
+					<alias>AT63</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>dingchangshun@gmail.com</name>
+					<alias>纯真</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>edgarhoo@gmail.com</name>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>fe92891dfa7fc3624eaa0104ea55f5f6c7711227.jpg</setting>
+					<setting name='icon_checksum' type='string'>fe92891dfa7fc3624eaa0104ea55f5f6c7711227</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>follow5003@gmail.com</name>
+					<alias>小Me</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>c34e7ecefbfe3803a9659297c26dee61c8b8eae0.jpg</setting>
+					<setting name='icon_checksum' type='string'>c34e7ecefbfe3803a9659297c26dee61c8b8eae0</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>foolzone@gmail.com</name>
+					<alias>呆呆虫</alias>
+					<setting name='last_seen' type='int'>1308302087</setting>
+					<setting name='buddy_icon' type='string'>99c50cd6a4a7db61b129ee6782a145e20d113132.jpg</setting>
+					<setting name='icon_checksum' type='string'>99c50cd6a4a7db61b129ee6782a145e20d113132</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>iamschiy@gmail.com</name>
+					<alias>Schiy</alias>
+					<setting name='last_seen' type='int'>1308794152</setting>
+					<setting name='buddy_icon' type='string'>5fa4420dc1c59d3aa89325add3865ac55ddf8674.jpg</setting>
+					<setting name='icon_checksum' type='string'>5fa4420dc1c59d3aa89325add3865ac55ddf8674</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>kevin.fanrq@gmail.com</name>
+					<alias>kevin fan</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>kingda.org@gmail.com</name>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>linxz428@gmail.com</name>
+					<alias>小志</alias>
+					<setting name='last_seen' type='int'>1308149030</setting>
+					<setting name='buddy_icon' type='string'>1fc23fe3a843273c62aa1bdefcff49e0b79d3f57.jpg</setting>
+					<setting name='icon_checksum' type='string'>1fc23fe3a843273c62aa1bdefcff49e0b79d3f57</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>miles.wy.1@gmail.com</name>
+					<alias>温悦</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>njutliu@gmail.com</name>
+					<alias>Fly</alias>
+					<setting name='last_seen' type='int'>1308817443</setting>
+					<setting name='buddy_icon' type='string'>34c58ad6c66cd8827afaba2a2db57139e8ee2c93.jpg</setting>
+					<setting name='icon_checksum' type='string'>34c58ad6c66cd8827afaba2a2db57139e8ee2c93</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>oldj.wu@gmail.com</name>
+					<alias>吴英杰</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>af41f2e0f48d15e46488d8360ee1aaef68ceb7fb.jpg</setting>
+					<setting name='icon_checksum' type='string'>af41f2e0f48d15e46488d8360ee1aaef68ceb7fb</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>oyooloo@gmail.com</name>
+					<alias>小七</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>roiyanzi@gmail.com</name>
+					<alias>zhu yanzi</alias>
+					<setting name='last_seen' type='int'>1308639762</setting>
+					<setting name='buddy_icon' type='string'>a7bfc05b3eee53eac90068306324f1a18ac72dea.png</setting>
+					<setting name='icon_checksum' type='string'>a7bfc05b3eee53eac90068306324f1a18ac72dea</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>sinat034@gmail.com</name>
+					<alias>新浪微博小助手</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>7cbba1f125c26dbe08a5916d184975a68e0f7124.png</setting>
+					<setting name='icon_checksum' type='string'>7cbba1f125c26dbe08a5916d184975a68e0f7124</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>swainet@gmail.com</name>
+					<alias>Denis Swain</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>tubage619@gmail.com</name>
+					<alias>Ray Song</alias>
+					<setting name='last_seen' type='int'>1305856431</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>socialcastbot@app.socialcast.com</name>
+					<alias>Socialcast Bot</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>dfcb2fb5bbc64543bdda8e705a9e30ddefdb498c.jpg</setting>
+					<setting name='icon_checksum' type='string'>dfcb2fb5bbc64543bdda8e705a9e30ddefdb498c</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>xling@asnum.com</name>
+					<alias>阮刚</alias>
+					<setting name='last_seen' type='int'>1306343903</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>swaydsw@gmail.com</name>
+					<alias>Sway Deng</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>verage@gmail.com</name>
+				</buddy>
+			</contact>
+		</group>
+		<group name='好友'>
+			<setting name='collapsed' type='bool'>0</setting>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>pigeonfenwick@gmail.com</name>
+					<alias>Pigeon 季子乌</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>8439a9716ddc61ed233ea78119bf6cc00f7da51b.png</setting>
+					<setting name='icon_checksum' type='string'>8439a9716ddc61ed233ea78119bf6cc00f7da51b</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>tblonggang@gmail.com</name>
+					<alias>Raino</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>c990ec14c2e39c1801c4fdd33fb01accaa530ee9.jpg</setting>
+					<setting name='icon_checksum' type='string'>c990ec14c2e39c1801c4fdd33fb01accaa530ee9</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>codygao@gmail.com</name>
+					<alias>Cody Gao</alias>
+					<setting name='last_seen' type='int'>1308794152</setting>
+					<setting name='buddy_icon' type='string'>1a109703b0feeef3ddb11cd9c545ee298f3d9f36.jpg</setting>
+					<setting name='icon_checksum' type='string'>1a109703b0feeef3ddb11cd9c545ee298f3d9f36</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>cyberiwege@gmail.com</name>
+					<alias>iwege</alias>
+					<setting name='last_seen' type='int'>1308119452</setting>
+					<setting name='buddy_icon' type='string'>b09b940ea9ab411a97d05d007e39cdb8348c0beb.png</setting>
+					<setting name='icon_checksum' type='string'>b09b940ea9ab411a97d05d007e39cdb8348c0beb</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>jxdawei@gmail.com</name>
+					<alias>Daviv</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>2b1ab5988a504c8abbc5eff3ae61bbb19362eb82.jpg</setting>
+					<setting name='icon_checksum' type='string'>2b1ab5988a504c8abbc5eff3ae61bbb19362eb82</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>legend05hvr@gmail.com</name>
+					<alias>mdong</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>3287c9e446ed1000983459be486992f69ea5692b.jpg</setting>
+					<setting name='icon_checksum' type='string'>3287c9e446ed1000983459be486992f69ea5692b</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>menghonglun@gmail.com</name>
+					<alias>孟红伦</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>9158a149422eae735527395a29faebd61dc7730f.jpg</setting>
+					<setting name='icon_checksum' type='string'>9158a149422eae735527395a29faebd61dc7730f</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>riahome.cn@gmail.com</name>
+					<alias>江学建</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>robert.think@gmail.com</name>
+					<alias>罗伟</alias>
+					<setting name='last_seen' type='int'>1308741596</setting>
+					<setting name='buddy_icon' type='string'>88153a4ea314bfb768e7b5d5a4b2acc74d403127.jpg</setting>
+					<setting name='icon_checksum' type='string'>88153a4ea314bfb768e7b5d5a4b2acc74d403127</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>shen218@gmail.com</name>
+					<alias>Chao Shen</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>ae22ea79999816d131376728308e129743ad308a.jpg</setting>
+					<setting name='icon_checksum' type='string'>ae22ea79999816d131376728308e129743ad308a</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>allen.me@gmail.com</name>
+					<alias>allen</alias>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>lufeng1113@gmail.com</name>
+					<alias>Eric Lu</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>31b36f4252fd51eef0376acda871efde4b48950b.jpg</setting>
+					<setting name='icon_checksum' type='string'>31b36f4252fd51eef0376acda871efde4b48950b</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>miclginp@gmail.com</name>
+					<alias>Evan.zhou</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>4c80c8a1ef6f1e2e773cc890b3735564b7146075.jpg</setting>
+					<setting name='icon_checksum' type='string'>4c80c8a1ef6f1e2e773cc890b3735564b7146075</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>hongru.chenhr@gmail.com</name>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>648a7d68116ff4d4bf75d1975ab9d971acce3203.jpg</setting>
+					<setting name='icon_checksum' type='string'>648a7d68116ff4d4bf75d1975ab9d971acce3203</setting>
+				</buddy>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>simx.leizi@gmail.com</name>
+					<setting name='last_seen' type='int'>1308746692</setting>
+					<setting name='buddy_icon' type='string'>76fad54c32d38e4e570df6e9b6ab3657837d2533.jpg</setting>
+					<setting name='icon_checksum' type='string'>76fad54c32d38e4e570df6e9b6ab3657837d2533</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+				<setting name='pidgin-infopane-iconsize' type='int'>32</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>johnsonliume@gmail.com</name>
+					<alias>Johnson liu</alias>
+					<setting name='last_seen' type='int'>1308819220</setting>
+					<setting name='buddy_icon' type='string'>9d98c46e755e47093c3c4247854caf2d2a8df98b.jpg</setting>
+					<setting name='icon_checksum' type='string'>9d98c46e755e47093c3c4247854caf2d2a8df98b</setting>
+				</buddy>
+				<setting name='gtk-mute-sound' type='bool'>0</setting>
+			</contact>
+			<contact>
+				<buddy account='qhwa@pnq.cc/pnq.cc' proto='prpl-jabber'>
+					<name>waterlily.k@gmail.com</name>
+					<setting name='last_seen' type='int'>1308748845</setting>
+					<setting name='buddy_icon' type='string'>ef6a68b12adb711ea630d8f887f58b8d91a36b73.png</setting>
+					<setting name='icon_checksum' type='string'>ef6a68b12adb711ea630d8f887f58b8d91a36b73</setting>
+				</buddy>
+			</contact>
+		</group>
+	</blist>
+	<privacy>
+		<account proto='prpl-jabber' name='qhwa@pnq.cc/pnq.cc' mode='1'>
+			<block>dingchangshun@gmail.com</block>
+		</account>
+	</privacy>
+</purple>
