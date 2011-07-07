@@ -4,8 +4,7 @@ sudo cp assets/fonts/* /usr/share/fonts/X11/
 # software
 gvim --version > /dev/null || sudo apt-get install vim-gnome
 # vim-files
-svn export softwares/vim/config/.vim_runtime ~/.vim_runtime --force
-#cp softwares/vim/config/.vim_runtime ~/ -a
+cp softwares/vim/config/.vim_runtime ~ -a
 cp softwares/vim/config/.vimrc ~
 
 ## config plugins

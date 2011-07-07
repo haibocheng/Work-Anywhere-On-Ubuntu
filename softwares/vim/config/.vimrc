@@ -87,6 +87,9 @@ vmap <silent> cu :call RangeUnCommentLine()<CR>
 au FileType javascript inoremap <buffer> nn function PH() {<CR>}<ESC>k$FP2xi
 au FileType ruby inoremap <buffer> def def PH<CR>end<ESC>k$FPC
 au FileType ruby nmap <buffer> <leader>r :!ruby "%"<CR>
+au FileType ruby set tabstop=2
+au FileType ruby set softtabstop=2
+au FileType ruby set shiftwidth=2
 
 " key-mappings for <Alt-[hjkl]> moving cursor in insert mode
 imap <M-l> <RIGHT>
