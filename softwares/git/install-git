@@ -3,3 +3,4 @@ sudo apt-get install git
 
 git config --global user.name qhwa
 git config --global user.email qhwa@163.com
+git config --global diff.external ~/cmd/diffwrap-meld.sh

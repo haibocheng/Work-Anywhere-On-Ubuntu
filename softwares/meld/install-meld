@@ -1,0 +1,4 @@
+#!/bin/bash
+sudo apt-get install meld
+cp `dirname $0`/diffwrap-meld.sh ~/cmd/diffwrap-meld.sh
+
