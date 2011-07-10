@@ -1,0 +1,24 @@
+export WAW_LOCATION=home
+export WAW_AUTOMATIC=1
+
+function install_all(){
+    cd $work_path
+    source config
+    for soft in $(ls softwares)
+    do
+        echo installing $soft
+        softwares/$soft/install-$soft
+        echo '------------------------------------'
+    done
+
+    for env in $(ls enviroments)
+    do
+        echo configing $env
+        enviroments/$env/config-$env
+        echo '------------------------------------'
+    done
+}
+install_all
+unset WAW_LOCATION
+unset WAW_AUTOMATIC
+echo 'Job finished!'
