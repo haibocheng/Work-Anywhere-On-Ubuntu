@@ -7,7 +7,12 @@ function add_dropbox_host(){
 }
 
 function install_dropbox(){
-    wget -c http://linux.dropbox.com/packages/nautilus-dropbox_0.6.7_amd64.deb -O nautilus-dropbox.deb
+    tmp=tmp/softwares
+    mkdir -p $tmp
+    cd $tmp
+    wget http://linux.dropbox.com/packages/nautilus-dropbox_0.6.7_$(uname -i).deb \
+        -c \
+        -O nautilus-dropbox.deb
     sudo dpkg -i nautilus-dropbox.deb
 }
 
