@@ -4,7 +4,7 @@ endfun
 set runtimepath=~/.vim_runtime,~/.vim_runtime/after,\$VIMRUNTIME
 source ~/.vim_runtime/vimrc
 "helptags ~/.vim_runtime/doc
-set guifont=Lucida\ Sans\ Typewriter\ Std\ 12
+set guifont=Lucida\ Sans\ Typewriter\ 12
 
 if has("gui_running")
   set guioptions-=T
@@ -20,7 +20,6 @@ endif
 set number
 set nocompatible
 syntax on
-set guifont=Lucida\ Sans\ Typewriter\ 16
 set number
 set noeb
 set confirm
