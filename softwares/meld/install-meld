@@ -2,5 +2,5 @@
 sudo apt-get install meld
 path=`dirname $0`
 cp $path/diffwrap-meld.sh ~/cmd/
-cp $path/svn-diff-meld.sh ~/cmd/
+cp $path/svn-diff-meld ~/cmd/
 
