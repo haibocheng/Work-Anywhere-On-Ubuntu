@@ -8,14 +8,5 @@ function add_custom_alias(){
     fi
 }
 
-if [ "-f" == "$1" ] && [ -e ~/.bash_my_alias ]; then
-    rm ~/.bash_my_alias
-fi
-
-if [ ! -e ~/.bash_my_alias ]; then
-    echo 'adding my alias'
-    add_custom_alias
-fi
-
-
-
+echo 'adding my alias'
+add_custom_alias

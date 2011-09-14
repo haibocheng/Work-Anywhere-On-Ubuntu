@@ -16,10 +16,18 @@ function install_plugin_rails(){
 
 function install_plugin_markdown(){
     path="tmp/softwares/vim-markdown"
-    [ -d "$path"] || git clone https://github.com/plasticboy/vim-markdown.git $path
+    [ -d "$path" ] || git clone https://github.com/plasticboy/vim-markdown.git $path
     cp -a $path/* ~/.vim_runtime/
+}
+
+function add_alias(){
+    if [ -z "$(grep '## vim alias ##' ~/.bashrc)" ]; then
+        echo '## vim alias ##' >> ~/.bashrc
+        echo 'alias gvim="env UBUNTU_MENUPROXY=1 gvim"' >> ~/.bashrc
+    fi
 }
 
 install_plugin_rails
 install_plugin_markdown
+add_alias
 sudo rm ~/yankring_history*.txt ~/.vim_mru_files
