@@ -4,15 +4,15 @@
 
 |名称                      | 描述                               |
 |--------------------------|------------------------------------|
-|tofrodos                  |转换DOS和UNIX换行工具|
-|ack-grep                  |专门为扫描程序文件做了优化的grep|
-|proxychains               |非常好用的命令行翻墙工具|
-|nautilus-open-terminal    |在目录中直接打开当前目录的终端|
-|clipit                    |剪贴板记录|
-|gimp                      |图片编辑软件|
-|most                      |比more更好用的分页工具|
-|autossh                   |用于自动连接SSH，主要是不间断代理|
-|subversion                |版本控制工具|
+|basictools - tofrodos     |转换DOS和UNIX换行工具|
+|basictools - ack-grep     |专门为扫描程序文件做了优化的grep|
+|basictools - proxychains  |非常好用的命令行翻墙工具|
+|basictools - nautilus-open-terminal    |在目录中直接打开当前目录的终端|
+|basictools - clipit       |剪贴板记录|
+|basictools - gimp         |图片编辑软件|
+|basictools - most         |比more更好用的分页工具|
+|basictools - autossh      |用于自动连接SSH，主要是不间断代理|
+|basictools - subversion   |版本控制工具|
 |chrome|
 |dict                      |在命令行下调用有道翻译|
 |dropbox|
@@ -36,3 +36,14 @@
 |terminal                  |终端字体等配置|
 |vpn                       |ArrayVPN的ubuntu客户端脚本|
 |window                    |将窗口的关闭等按钮移到右上角|
+
+## 安装方法
+
+~~~shell
+git clone https://qhwa@github.com/qhwa/Work-Anywhere-On-Ubuntu.git work-anywhere
+cd work-anywhere
+./install #安装全部
+./softwares/<软件名称>/install-<软件名称>    #提示：多用tab哦
+./enviroments/<配置名称>/config-<配置名称>
+~~~
+
