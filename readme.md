@@ -48,7 +48,7 @@
 
         ./install #安装全部
 
-   或安装指定的软件/配置
+    或安装指定的软件/配置
 
         ./softwares/<软件名称>/install-<软件名称>    #提示：多用tab哦
         ./enviroments/<配置名称>/config-<配置名称>
