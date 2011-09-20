@@ -3,8 +3,8 @@
 <account version='1.0'>
 	<account>
 		<protocol>prpl-jabber</protocol>
-		<name>qhwa@pnq.cc/pnq.cc</name>
-		<password>830822</password>
+		<name>myaccount</name>
+		<password>mypassword</password>
 		<alias>qhwa</alias>
 		<statuses>
 			<status type='available' name='可用' active='true'>
