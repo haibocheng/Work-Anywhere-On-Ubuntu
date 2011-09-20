@@ -39,11 +39,17 @@
 
 ## 安装方法
 
-~~~shell
-git clone https://qhwa@github.com/qhwa/Work-Anywhere-On-Ubuntu.git work-anywhere
-cd work-anywhere
-./install #安装全部
-./softwares/<软件名称>/install-<软件名称>    #提示：多用tab哦
-./enviroments/<配置名称>/config-<配置名称>
-~~~
+1. 下载
+
+        git clone https://qhwa@github.com/qhwa/Work-Anywhere-On-Ubuntu.git work-anywhere
+        cd work-anywhere
+
+2. 安装全部
+
+        ./install #安装全部
+
+   或安装指定的软件/配置
+
+        ./softwares/<软件名称>/install-<软件名称>    #提示：多用tab哦
+        ./enviroments/<配置名称>/config-<配置名称>
 
