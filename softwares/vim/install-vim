@@ -4,6 +4,7 @@ sudo cp assets/fonts/* /usr/share/fonts/X11/
 # software
 gvim --version > /dev/null || sudo apt-get install vim-gnome
 # vim-files
+export VIMFILES="~/.vim_runtime"
 cp softwares/vim/config/.vim_runtime ~ -a
 cp softwares/vim/config/.vimrc ~
 
@@ -20,6 +21,12 @@ function install_plugin_markdown(){
     cp -a $path/* ~/.vim_runtime/
 }
 
+function install_plugin_jslint(){
+    path="tmp/softwares/vim-jslint"
+    [ -d "$path" ] || git clone git://github.com/hallettj/jslint.vim.git $path
+    cd $path && rake install > /dev/null
+}
+
 function add_alias(){
     if [ -z "$(grep '## vim alias ##' ~/.bashrc)" ]; then
         echo '## vim alias ##' >> ~/.bashrc
@@ -29,5 +36,6 @@ function add_alias(){
 
 install_plugin_rails
 install_plugin_markdown
+install_plugin_jslint
 add_alias
 sudo rm ~/yankring_history*.txt ~/.vim_mru_files

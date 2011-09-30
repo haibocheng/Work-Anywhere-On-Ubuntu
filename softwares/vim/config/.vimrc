@@ -118,3 +118,6 @@ nmap <leader>` :NERDTreeToggle<CR>
 
 " Plugin: Rails
 let g:rails_statusline=0
+
+" Plugin: NERDTree-Ack
+let g:path_to_search_app = "/usr/bin/ack-grep" 
