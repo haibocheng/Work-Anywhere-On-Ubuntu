@@ -67,11 +67,8 @@ nmap <C-v> h"+p
 imap <C-v> <ESC><C-v>a
 
 "<Ctrl-s> for saving
-map <C-s> :write!<CR>
-imap <C-s> <ESC>:write<CR>a
-
-"<Ctrl-w> for closing tabs
-nmap <C-w> :q<CR>
+map <silent><C-s> :update<CR>
+imap <C-s> <ESC>:update<CR>a
 
 " key-mappings for comment line in normal mode
 nmap  <silent> cm :call CommentLine()<CR>
