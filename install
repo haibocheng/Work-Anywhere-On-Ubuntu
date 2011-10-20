@@ -2,8 +2,8 @@ export WAW_LOCATION=home
 export WAW_AUTOMATIC=1
 
 function install_all(){
-    cd $work_path
-    source config
+    mkdir -p ~/cmd
+    [ -e config ] && source config
     for soft in $(ls softwares)
     do
         echo installing $soft

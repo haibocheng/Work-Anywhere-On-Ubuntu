@@ -1,12 +1,13 @@
 #!/bin/bash
 # font
-sudo cp assets/fonts/* /usr/share/fonts/X11/
+[ -e asstes/fonts ] && sudo cp assets/fonts/* /usr/share/fonts/X11/
 # software
 gvim --version > /dev/null || sudo apt-get install vim-gnome
 # vim-files
 export VIMFILES="~/.vim_runtime"
-cp softwares/vim/config/.vim_runtime ~ -a
-cp softwares/vim/config/.vimrc ~
+path=`dirname $0`
+cp $path/config/.vim_runtime ~ -a
+cp $path/config/.vimrc ~
 
 ## config plugins
 function install_plugin_rails(){
@@ -30,7 +31,7 @@ function install_plugin_jslint(){
 function add_alias(){
     if [ -z "$(grep '## vim alias ##' ~/.bashrc)" ]; then
         echo '## vim alias ##' >> ~/.bashrc
-        echo 'alias gvim="env UBUNTU_MENUPROXY=1 gvim"' >> ~/.bashrc
+        echo 'alias gvim="gvim -f"' >> ~/.bashrc
     fi
 }
 
@@ -38,4 +39,4 @@ install_plugin_rails
 install_plugin_markdown
 install_plugin_jslint
 add_alias
-sudo rm ~/yankring_history*.txt ~/.vim_mru_files
+sudo rm -rf ~/yankring_history*.txt ~/.vim_mru_files
