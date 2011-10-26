@@ -80,8 +80,6 @@ nmap  <silent> cu :call UnCommentLine()<CR>
 " key-mappings for range un-comment lines in visual <Shift-V> mode
 vmap <silent> cu :call RangeUnCommentLine()<CR>
 
-au FileType javascript inoremap <buffer> nn function PH() {<CR>}<ESC>k$FP2xi
-au FileType ruby inoremap <buffer> def def PH<CR>end<ESC>k$FPC
 au FileType ruby nmap <buffer> <leader>r :!ruby "%"<CR>
 au FileType ruby set tabstop=2
 au FileType ruby set softtabstop=2
@@ -100,11 +98,6 @@ unmap <RIGHT>
 
 nmap <C-z> :shell<CR>
 nmap <leader>so :so %<CR>
-
-let blog_name='FlashLight'
-let blogit_username='qhwa' 
-let blogit_password='830822blog' 
-let blogit_url='https://q.pnq.cc/xmlrpc.php'
 
 " Plugin: Quickfonts
 nmap <leader>= :QuickFontBigger<CR>

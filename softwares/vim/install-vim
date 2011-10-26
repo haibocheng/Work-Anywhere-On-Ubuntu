@@ -4,7 +4,7 @@
 # software
 gvim --version > /dev/null || sudo apt-get install vim-gnome
 # vim-files
-export VIMFILES="~/.vim_runtime"
+export VIMFILES="$HOME/.vim_runtime"
 path=`dirname $0`
 cp $path/config/.vim_runtime ~ -a
 cp $path/config/.vimrc ~
@@ -13,19 +13,25 @@ cp $path/config/.vimrc ~
 function install_plugin_rails(){
     path="tmp/softwares/vim-rails"
     [ -d "$path" ] || git clone https://github.com/tpope/vim-rails.git $path
-    cp -a $path/* ~/.vim_runtime/
+    cp -a $path/* $VIMFILES/
 }
 
 function install_plugin_markdown(){
     path="tmp/softwares/vim-markdown"
     [ -d "$path" ] || git clone https://github.com/plasticboy/vim-markdown.git $path
-    cp -a $path/* ~/.vim_runtime/
+    cp -a $path/* $VIMFILES/
 }
 
 function install_plugin_jslint(){
     path="tmp/softwares/vim-jslint"
     [ -d "$path" ] || git clone git://github.com/hallettj/jslint.vim.git $path
-    cd $path && rake install > /dev/null
+    cd $path && rake install > /dev/null && cd -
+}
+
+function install_plugin_snipmate(){
+    path="tmp/softwares/vim-snippets"
+    [ -d "$path" ] || git clone https://github.com/honza/snipmate-snippets.git $path
+    cp -a $path/snippets $VIMFILES/
 }
 
 function add_alias(){
@@ -38,5 +44,6 @@ function add_alias(){
 install_plugin_rails
 install_plugin_markdown
 install_plugin_jslint
+install_plugin_snipmate
 add_alias
 sudo rm -rf ~/yankring_history*.txt ~/.vim_mru_files
