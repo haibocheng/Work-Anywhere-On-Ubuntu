@@ -14,7 +14,7 @@ function install_dropbox(){
     tar -xjf nautilus-dropbox*.tar.bz2
     cd nautilus-dropbox*
 
-    sudo apt-get install -y l -yibnautilus-extension-dev python-docutils
+    sudo apt-get install -y libnautilus-extension-dev python-docutils
     ./configure && make && sudo make install
     sudo apt-get remove libnautilus-extension-dev -y
     sudo apt-get autoremove -y
