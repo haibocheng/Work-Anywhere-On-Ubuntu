@@ -30,7 +30,7 @@ function install_plugin_jslint(){
 
 function install_plugin_snipmate(){
     path="tmp/softwares/vim-snippets"
-    [ -d "$path" ] || git clone https://github.com/honza/snipmate-snippets.git $path
+    [ -d "$path" ] || git clone https://github.com/qhwa/snipmate-snippets.git $path
     cp -a $path/snippets $VIMFILES/
 }
 
