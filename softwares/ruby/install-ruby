@@ -22,7 +22,7 @@ function install_ruby(){
 }
 
 function prepair(){
-  sudo apt-get install build-essential libreadline5-dev libssl-dev
+  sudo apt-get install build-essential libreadline-dev libssl-dev
 }
 
 function update_gems(){
@@ -33,4 +33,4 @@ function clean(){
   rm -rf tmp
 }
 
-/usr/local/ruby/bin/ruby -v > /dev/null && echo 'ruby has been already installed' || install_ruby
+[ -x "/usr/local/ruby/bin/ruby" ] && echo 'ruby has been already installed' || install_ruby
