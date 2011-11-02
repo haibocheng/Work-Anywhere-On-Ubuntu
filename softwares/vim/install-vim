@@ -1,11 +1,10 @@
 #!/bin/bash
-# font
-[ -e asstes/fonts ] && sudo cp assets/fonts/* /usr/share/fonts/X11/
 # software
 gvim --version > /dev/null || sudo apt-get install vim-gnome
 # vim-files
 export VIMFILES="$HOME/.vim_runtime"
 path=`dirname $0`
+sudo cp assets/fonts/* /usr/share/fonts/X11/
 cp $path/config/.vim_runtime ~ -a
 cp $path/config/.vimrc ~
 

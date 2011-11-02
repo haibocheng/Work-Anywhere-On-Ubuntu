@@ -10,7 +10,8 @@ function install(){
         gimp \
         most \
         autossh \
-        subversion
+        subversion \
+        unrar
         #--
 }
 
