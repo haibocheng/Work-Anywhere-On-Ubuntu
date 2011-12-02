@@ -11,6 +11,7 @@ function install_ruby(){
         --prefix=/usr/local/ruby \
   && make \
   && sudo make install \
+  && install_exts \
   && echo 'Ruby successfully installed' \
   && echo 'export PATH=$PATH:/usr/local/ruby/bin' > tmp.sh \
   && sudo cp tmp.sh /etc/profile.d/ruby-path.sh \
@@ -22,7 +23,35 @@ function install_ruby(){
 }
 
 function prepair(){
-  sudo apt-get install build-essential libreadline5-dev libssl-dev
+  sudo apt-get install libreadline-dev -y
+  sudo apt-get install -y \
+      build-essential \
+      libc6-dev \
+      libreadline6-dev \
+      libssl-dev \
+      libsqlite3-dev \
+      libxml2-dev \
+      libxslt-dev \
+      libyaml-dev \
+      ncurses-dev \
+      openssl \
+      sqlite3 \
+      zlib1g \
+      zlib1g-dev
+}
+
+function install_exts(){
+  for ext in `ls ext`
+  do
+    if [ -f "$ext/extconf.rb" ]; then
+      cd $ext
+      echo -e "compiling extension $ext"
+      /usr/local/ruby/bin/ruby extconf.rb
+      make
+      sudo make install
+      cd ..
+    fi
+  done
 }
 
 function update_gems(){
@@ -33,4 +62,4 @@ function clean(){
   rm -rf tmp
 }
 
-/usr/local/ruby/bin/ruby -v > /dev/null && echo 'ruby has been already installed' || install_ruby
+[ -x "/usr/local/ruby/bin/ruby" ] && echo 'ruby has been already installed' || install_ruby
