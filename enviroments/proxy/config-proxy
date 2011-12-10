@@ -1,4 +1,6 @@
 #!/bin/bash
-echo "#proxy" >> ~/.bashrc
-echo "alias proxy='autossh -M 2000 -f pnqcc@pnq.cc -N -D 0.0.0.0:8000'" >> ~/.bashrc
-source ~/.bashrc
+if [ -z "$(grep '## proxy ##' ~/.bashrc)" ]; then
+    echo "## proxy ##" >> ~/.bashrc
+    echo "alias proxy='autossh -M 2000 -f pnqcc@pnq.cc -N -D 0.0.0.0:8000'" >> ~/.bashrc
+    source ~/.bashrc
+fi

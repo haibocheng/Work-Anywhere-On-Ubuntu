@@ -13,6 +13,7 @@
 |basictools - most         |比more更好用的分页工具|
 |basictools - autossh      |用于自动连接SSH，主要是不间断代理|
 |basictools - subversion   |版本控制工具|
+|basictools - unrar        |使系统自带的解压工具支持rar格式|
 |chrome|
 |dict                      |在命令行下调用有道翻译|
 |dropbox|
