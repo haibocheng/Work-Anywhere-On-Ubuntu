@@ -47,8 +47,8 @@ filetype on
 filetype plugin on
 filetype indent on
 
-inoremap ;; <Esc>
-inoremap ;d <ESC>dd
+inoremap jk <Esc>
+inoremap <leader>d <ESC>dd
 vnoremap <C-c> "+y
 nnoremap <C-c> "+yaw
 nnoremap <C-v> h"+p
@@ -81,9 +81,11 @@ inoremap <M-h> <LEFT>
 inoremap `` <ESC>
 inoremap <C-l> <ESC>A
 inoremap <C-h> <ESC>I
-inoremap <C-o> <ESC>O
+inoremap <silent><C-o> <ESC>O
 
 nnoremap <C-d> yyp
+nnoremap <leader>ev :vsplit $MYVIMRC<CR>
+nnoremap <leader>sv :source $MYVIMRC<CR>
 
 unmap <LEFT>
 unmap <RIGHT>
@@ -94,6 +96,9 @@ nnoremap <C-z> :shell<CR>
 nnoremap <leader>= :QuickFontBigger<CR>
 nnoremap <leader>- :QuickFontSmaller<CR>
 
+vnoremap " <ESC>i"<ESC>gvo<ESC>i"<ESC>
+vnoremap ' <ESC>i'<ESC>gvo<ESC>i'<ESC>
+
 " Plugin: NERDTree
 noremap <F2> :NERDTreeToggle<CR>
 
@@ -103,5 +108,4 @@ let g:rails_statusline=0
 " Plugin: NERDTree-Ack
 let g:path_to_search_app = "/usr/bin/ack-grep" 
 
-"设置工作目录
-autocmd BufEnter * exec "cd " . expand("%:p:h")
+iabbrev func function
