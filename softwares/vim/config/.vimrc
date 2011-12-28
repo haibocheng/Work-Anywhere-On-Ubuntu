@@ -11,44 +11,27 @@ if has("gui_running")
   set t_Co=256
   set background=light
   colorscheme tutticolori
-  set nonu
 else
   colorscheme colorful
-  set nonu
 endif
 
-set number
 set nocompatible
-syntax on
 set number
 set noeb
 set confirm
-set autoindent
-set cindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-set smarttab
+set autoindent cindent
+set tabstop=4 softtabstop=4 shiftwidth=4 expandtab smarttab
 set history=1000
-set nobackup
-set noswapfile
-set ignorecase
-set smartcase
-set hlsearch
-set incsearch
+set nobackup noswapfile
+set ignorecase smartcase hlsearch incsearch
 set gdefault
 set enc=utf-8
 set fencs=utf-8,ucs-bom,shift-jis,gb18030,gbk,gb2312,cp936
-set langmenu=zh_CN.UTF-8
-set helplang=cn
+set langmenu=zh_CN.UTF-8 helplang=cn
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [POS=%l,%v][%p%%]\ %{strftime(\"%d/%m/%y\ -\ %H:%M\")}
 set laststatus=2
 set ruler
 
-filetype on
-filetype plugin on
-filetype indent on
 set viminfo+=!
 set mouse=a
 set selection=exclusive
@@ -59,55 +42,66 @@ set showmatch
 set matchtime=5
 set scrolloff=3
 
-imap ;; <Esc>
-imap ;d <ESC>dd
-vmap <C-c> "+y
-nmap <C-c> "+yaw
-nmap <C-v> h"+p
-imap <C-v> <ESC><C-v>a
+syntax on
+filetype on
+filetype plugin on
+filetype indent on
+
+inoremap ;; <Esc>
+inoremap ;d <ESC>dd
+vnoremap <C-c> "+y
+nnoremap <C-c> "+yaw
+nnoremap <C-v> h"+p
+inoremap <C-v> <ESC><C-v>a
 
 "<Ctrl-s> for saving
 map <silent><C-s> :update<CR>
-imap <C-s> <ESC>:update<CR>a
+inoremap <C-s> <ESC>:update<CR>a
 
 " key-mappings for comment line in normal mode
-nmap  <silent> cm :call CommentLine()<CR>
+nnoremap  <silent> cm :call CommentLine()<CR>
 " key-mappings for range comment lines in visual <Shift-V> mode
-vmap <silent> cm :call RangeCommentLine()<CR>
+vnoremap <silent> cm :call RangeCommentLine()<CR>
 
 " key-mappings for un-comment line in normal mode
-nmap  <silent> cu :call UnCommentLine()<CR>
+nnoremap  <silent> cu :call UnCommentLine()<CR>
 " key-mappings for range un-comment lines in visual <Shift-V> mode
-vmap <silent> cu :call RangeUnCommentLine()<CR>
+vnoremap <silent> cu :call RangeUnCommentLine()<CR>
 
-au FileType ruby nmap <buffer> <leader>r :!ruby "%"<CR>
-au FileType ruby set tabstop=2
-au FileType ruby set softtabstop=2
-au FileType ruby set shiftwidth=2
+au FileType ruby nnoremap <buffer> <leader>r :!ruby "%"<CR>
+au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
+au FileType vim nnoremap <buffer> <leader>r :so %<CR>
+au FileType sh  nnoremap <buffer> <leader>r :!sh "%"<CR>
 
 " key-mappings for <Alt-[hjkl]> moving cursor in insert mode
-imap <M-l> <RIGHT>
-imap <M-k> <UP>
-imap <M-j> <DOWN>
-imap <M-h> <LEFT>
+inoremap <M-l> <RIGHT>
+inoremap <M-k> <UP>
+inoremap <M-j> <DOWN>
+inoremap <M-h> <LEFT>
+inoremap `` <ESC>
+inoremap <C-l> <ESC>A
+inoremap <C-h> <ESC>I
+inoremap <C-o> <ESC>O
 
-nmap <C-d> yyp
+nnoremap <C-d> yyp
 
 unmap <LEFT>
 unmap <RIGHT>
 
-nmap <C-z> :shell<CR>
-nmap <leader>so :so %<CR>
+nnoremap <C-z> :shell<CR>
 
 " Plugin: Quickfonts
-nmap <leader>= :QuickFontBigger<CR>
-nmap <leader>- :QuickFontSmaller<CR>
+nnoremap <leader>= :QuickFontBigger<CR>
+nnoremap <leader>- :QuickFontSmaller<CR>
 
 " Plugin: NERDTree
-nmap <leader>` :NERDTreeToggle<CR>
+noremap <F2> :NERDTreeToggle<CR>
 
 " Plugin: Rails
 let g:rails_statusline=0
 
 " Plugin: NERDTree-Ack
 let g:path_to_search_app = "/usr/bin/ack-grep" 
+
+"设置工作目录
+autocmd BufEnter * exec "cd " . expand("%:p:h")
