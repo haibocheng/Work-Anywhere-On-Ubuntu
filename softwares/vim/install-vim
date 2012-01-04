@@ -11,6 +11,7 @@ function install_vim(){
     install_plugin_markdown
     install_plugin_jslint
     install_plugin_snipmate
+    install_plugin_tabular
     add_alias
     clean
 }
@@ -46,6 +47,12 @@ function install_plugin_snipmate(){
     path="tmp/softwares/vim-snippets"
     [ -d "$path" ] || git clone https://github.com/qhwa/snipmate-snippets.git $path
     cp -a $path/snippets $VIMFILES/
+}
+
+function install_plugin_tabular(){
+    path="tmp/softwares/vim-tabular"
+    [ -d "$path" ] || git clone git://github.com/godlygeek/tabular.git $path
+    cp -a $path/* $VIMFILES/
 }
 
 function copy_configs(){
