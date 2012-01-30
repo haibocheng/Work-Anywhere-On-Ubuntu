@@ -1,65 +1,6 @@
 #!/bin/bash
 function install_ruby(){
-  prepair
-  mkdir tmp/softwares/ruby -p
-  echo 'Installing latest stable version of Ruby 1.9' \ 
-  wget -c 'http://ftp.ruby-lang.org/pub/ruby/ruby-1.9-stable.tar.gz' -O tmp/softwares/ruby/ruby-1.9-stable.tar.gz \
-  && pushd tmp/softwares/ruby \
-  && tar -xzf ruby-1.9-stable.tar.gz \
-  && cd ruby-1.9* \
-  && ./configure \
-        --prefix=/usr/local/ruby \
-  && make \
-  && sudo make install \
-  && install_exts \
-  && echo 'Ruby successfully installed' \
-  && echo 'export PATH=$PATH:/usr/local/ruby/bin' > tmp.sh \
-  && sudo cp tmp.sh /etc/profile.d/ruby-path.sh \
-  && rm tmp.sh
-  popd
-  source /etc/profile.d/ruby-path.sh
-
-  update_gems
+  sudo apt-get install ruby1.9.1-dev
 }
 
-function prepair(){
-  sudo apt-get install libreadline-dev -y
-  sudo apt-get install -y \
-      build-essential \
-      libc6-dev \
-      libreadline6-dev \
-      libssl-dev \
-      libsqlite3-dev \
-      libxml2-dev \
-      libxslt-dev \
-      libyaml-dev \
-      ncurses-dev \
-      openssl \
-      sqlite3 \
-      zlib1g \
-      zlib1g-dev
-}
-
-function install_exts(){
-  for ext in `ls ext`
-  do
-    if [ -f "$ext/extconf.rb" ]; then
-      cd $ext
-      echo -e "compiling extension $ext"
-      /usr/local/ruby/bin/ruby extconf.rb
-      make
-      sudo make install
-      cd ..
-    fi
-  done
-}
-
-function update_gems(){
-  sudo /usr/local/ruby/bin/gem update --system
-}
-
-function clean(){
-  rm -rf tmp
-}
-
-[ -x "/usr/local/ruby/bin/ruby" ] && echo 'ruby has been already installed' || install_ruby
+install_ruby
