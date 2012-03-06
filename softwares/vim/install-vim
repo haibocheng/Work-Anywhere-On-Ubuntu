@@ -12,6 +12,7 @@ function install_vim(){
     install_plugin_jslint
     install_plugin_snipmate
     install_plugin_tabular
+    install_plugin_powerline
     add_alias
     clean
 }
@@ -52,6 +53,12 @@ function install_plugin_snipmate(){
 function install_plugin_tabular(){
     path="tmp/softwares/vim-tabular"
     [ -d "$path" ] || git clone git://github.com/godlygeek/tabular.git $path
+    cp -a $path/* $VIMFILES/
+}
+
+function install_plugin_powerline(){
+    path="tmp/softwares/vim-powerline"
+    [ -d "$path" ] || git clone git://github.com/Lokaltog/vim-powerline.git $path
     cp -a $path/* $VIMFILES/
 }
 
