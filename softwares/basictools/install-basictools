@@ -7,11 +7,11 @@ function install(){
         proxychains \
         nautilus-open-terminal \
         clipit \
-        gimp \
         most \
         autossh \
         subversion \
         unrar
+        curl
         #--
 }
 
