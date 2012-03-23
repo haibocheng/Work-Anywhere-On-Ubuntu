@@ -67,7 +67,7 @@ nnoremap  <silent> cu :call UnCommentLine()<CR>
 vnoremap <silent> cu :call RangeUnCommentLine()<CR>
 
 au FileType ruby nnoremap <buffer> <leader>r :!ruby "%"<CR>
-au FileType ruby set tabstop=2 softtabstop=2 shiftwidth=2
+au FileType ruby setlocal tabstop=2 softtabstop=2 shiftwidth=2
 au FileType vim nnoremap <buffer> <leader>r :so %<CR>
 au FileType sh  nnoremap <buffer> <leader>r :!sh "%"<CR>
 
