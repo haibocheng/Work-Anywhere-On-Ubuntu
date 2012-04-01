@@ -5,7 +5,6 @@ set runtimepath=~/.vim_runtime,~/.vim_runtime/after,\$VIMRUNTIME
 source ~/.vim_runtime/vimrc
 "helptags ~/.vim_runtime/doc
 set guifont=Lucida\ Sans\ Typewriter\ 12
-
 if has("gui_running")
   set guioptions-=T
   set t_Co=256
@@ -45,7 +44,7 @@ filetype on
 filetype plugin on
 filetype indent on
 
-inoremap jk <Esc>
+imap jk <Esc>
 inoremap <leader>d <ESC>dd
 vnoremap <C-c> "+y
 nnoremap <C-c> "+yaw
@@ -99,11 +98,15 @@ vnoremap ' <ESC>i'<ESC>gvo<ESC>i'<ESC>
 
 " Plugin: NERDTree
 noremap <F2> :NERDTreeToggle<CR>
+let g:NERDTreeWinPos = "right"
 
 " Plugin: Rails
 let g:rails_statusline=0
 
 " Plugin: NERDTree-Ack
 let g:path_to_search_app = "/usr/bin/ack-grep" 
+
+" Plugin: vimim
+let g:vimim_cloud = 'google,sogou,baidu,QQ'
 
 iabbrev func function
