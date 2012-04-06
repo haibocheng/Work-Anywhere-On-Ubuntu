@@ -75,6 +75,7 @@ inoremap <M-l> <RIGHT>
 inoremap <M-k> <UP>
 inoremap <M-j> <DOWN>
 inoremap <M-h> <LEFT>
+
 inoremap `` <ESC>
 inoremap <C-l> <ESC>A
 inoremap <C-h> <ESC>I
@@ -83,6 +84,13 @@ inoremap <silent><C-o> <ESC>O
 nnoremap <C-d> yyp
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
+
+" <Alt + [1-5]> goto tab in position i
+nnoremap <M-1> 1gt
+nnoremap <M-2> 2gt
+nnoremap <M-3> 3gt
+nnoremap <M-4> 4gt
+nnoremap <M-5> 5gt
 
 unmap <LEFT>
 unmap <RIGHT>
@@ -107,6 +115,7 @@ let g:rails_statusline=0
 let g:path_to_search_app = "/usr/bin/ack-grep" 
 
 " Plugin: vimim
-let g:vimim_cloud = 'google,sogou,baidu,QQ'
+"let g:vimim_cloud = 'google,sogou,baidu,QQ'
+let g:vimim_cloud = 'sogou'
 
 iabbrev func function
